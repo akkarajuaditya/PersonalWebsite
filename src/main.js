@@ -203,11 +203,10 @@ document.querySelector('#app').innerHTML = `
       </div>
     </section>
 
-    <div class="marquee">
-      <div class="marquee-track">
-        <span>Finance &middot; Data &middot; DCFs &middot; Plane Spotting &middot; Catan &middot; Investing &middot; Michigan Ross &middot; </span>
-        <span>Finance &middot; Data &middot; DCFs &middot; Plane Spotting &middot; Catan &middot; Investing &middot; Michigan Ross &middot; </span>
-      </div>
+    <div class="tag-row wrap">
+      ${['Finance', 'Data', 'DCFs', 'Plane Spotting', 'Catan', 'Investing', 'Michigan Ross']
+        .map((t, i) => `<span class="tag-chip reveal" style="transition-delay:${i * 60}ms">${t}</span>`)
+        .join('')}
     </div>
 
     <section id="about" class="section wrap about-section">
