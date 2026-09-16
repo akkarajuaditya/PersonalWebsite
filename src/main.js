@@ -1,13 +1,13 @@
 import './style.css'
 
-import headshot from './images/headshot-placeholder.svg'
+import headshot from './images/headshot.jpg'
 import planeImg from './images/plane.jpg'
 import lakeLouiseImg from './images/lake_louise.jpg'
 import volleyballImg from './images/beach_volleyball.jpg'
 import catanImg from './images/catan.jpg'
 import marbleHouseImg from './images/marble_house.jpg'
 import brunchImg from './images/brunch.jpg'
-import petraImg from './images/petra.jpg'
+import indyJonesImg from './images/indyjones.jpg'
 
 const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`
 
@@ -17,55 +17,40 @@ const experience = [
     role: 'Investment Analyst Intern',
     when: '2026',
     where: 'Ann Arbor, MI',
-    bullets: [
-      'Produced a 20+ page deck on Trump Account contribution rules and tax optimization, plus a 2-page take-home client guide',
-      "Built a 10+ page deck analyzing the firm's equity fund lineup to recommend funds to retain and replace",
-      'Delivered a 20-page assessment of the private credit industry and the firm’s major private credit funds',
-    ],
+    story:
+      "At Retirement Income Solutions, most of my work came down to turning complicated financial products into decisions a client could actually act on. My first project dug into Trump Accounts — I mapped out the contribution rules, tax optimization strategies, and long-term growth scenarios across a 20+ page deck, then distilled all of it into a 2-page take-home guide clients could read in five minutes and use immediately. From there I turned to the firm's own book of business, building a 10+ page analysis of fund returns and regional performance to recommend which equity funds to retain and which to replace. I closed out the internship with a 20-page assessment of the private credit industry and the firm's major private credit positions, built to help the firm decide which funds were worth retaining for clients.",
   },
   {
     org: 'Michigan Investment Group',
     role: 'Industrials Desk Co-Head',
     when: '2025 – Present',
     where: 'Novi, MI',
-    bullets: [
-      'Pitched Karman (KRMN) to 100+ members — DCF implied an upside of 48.3%',
-      'Recommended Ferrellgas (FGPR) on post-bankruptcy capital structure simplification — DCF implied 153% upside',
-      "Longed Globus Medical (GMED) on ASC migration and MIS platform consolidation — 86% implied upside",
-    ],
+    story:
+      "As Co-Head of the Industrials Desk at Michigan Investment Group, I pitch names to a room of 100+ members who will happily poke holes in every assumption in the model. My Karman (KRMN) pitch made the case around its planned integration into existing client products and programs and the compounding benefits that unlocks for future projects; the DCF implied a share price of $121, or 48.3% upside. I recommended Ferrellgas (FGPR) on the strength of its post-bankruptcy capital structure simplification, the Class B-to-A unit conversion, and a potential NASDAQ uplisting, with a DCF implying 153% upside. I also went long Globus Medical (GMED), on its ASC migration, evolving CMS reimbursement dynamics, and MIS platform consolidation, for a DCF-implied upside of 86%.",
   },
   {
     org: 'Nexecon Student Consulting Group',
     role: 'Business Analyst',
     when: '2025 – Present',
     where: 'Ann Arbor, MI',
-    bullets: [
-      'Evaluated 6 growth pathways for a national telehealth firm using TAM/SAM/SOM and 180+ physician surveys, recommending initiatives to cut churn 25%',
-      'Diagnosed churn sources for a distributor and built a distress score to flag profit-urgent, high-value customers',
-      "Analyzed 100+ survey responses on a major airline's lost-bag process, producing 45+ friction-reduction recommendations",
-    ],
+    story:
+      "Nexecon is where I work through problems that don't come with a template. For a national telehealth firm, I evaluated 6 strategic growth pathways using a TAM/SAM/SOM model, survey responses from 180+ physicians, and 50+ supporting analyses, recommending initiatives able to reduce customer churn by 25%. For a distributor client, I diagnosed the sources of churn, assessed 4 potential expansion markets, and built a distress score to identify the profit-urgent, high-value customers worth prioritizing across 4 industries. Most recently, I analyzed 100+ survey responses from a 15-question study on a major U.S. airline's lost-bag process, turning the findings into 45+ concrete recommendations to reduce customer friction.",
   },
   {
     org: 'Community Data Consulting',
     role: 'Head Data Consultant',
     when: '2023 – Present',
     where: 'Detroit, MI',
-    bullets: [
-      'Built multi-source community needs dashboards from 750+ data points serving 150K+ Detroit residents',
-      'Designed an automated student placement system, cutting sorting time 66% while improving accuracy',
-      'Ran an ABC/XYZ inventory analysis across 14 categories; co-published a 17-page annual report',
-    ],
+    story:
+      "Community Data Consulting is where I learned that a dashboard is only useful if the person reading it can act on it that day. I built multi-source community needs dashboards from 750+ data points, giving partner organizations real-time visibility into the needs of the 150K+ Detroit residents they serve and surfacing 7 new program expansion opportunities along the way. I also designed an automated placement system for 100+ students that cut sorting time by 66% while improving accuracy and keeping group outcomes aligned with each student's initial preferences. On the operations side, I ran an ABC/XYZ inventory analysis across 14 item categories to align community programs with strategic goals, and co-published a 17-page annual report seen by 5+ partner organizations.",
   },
   {
     org: 'Stewards Sustainability Leadership Institute',
     role: 'Director of Expansion',
     when: '2024 – Present',
     where: 'Novi, MI',
-    bullets: [
-      'Led an 11-person team through a data-driven expansion strategy that grew engagement 2.5x',
-      "Analyzed energy usage across 70+ properties (500+ data points) to prioritize Ann Arbor 2030's audits",
-      'Presented the revised sustainability strategy to 150+ attendees at the 2024 Michigan EGLE Youth Summit',
-    ],
+    story:
+      "Leading an 11-person team at Stewards Sustainability Leadership Institute, I helped build a data-driven expansion strategy that grew engagement 2.5x; part of that effort involved redesigning our recruitment strategy, based on current member feedback, around each individual member's experience rather than a one-size-fits-all pitch. I also analyzed energy usage across 70+ properties using 500+ data points to help prioritize Ann Arbor 2030's energy audits, presenting the findings to the organization's board and a DTE representative. That same year, I presented our revised sustainable growth strategy at the 2024 Michigan EGLE Youth Summit to 150+ attendees from across Michigan.",
   },
 ]
 
@@ -112,7 +97,7 @@ const fixations = [
   {
     img: planeImg,
     tag: 'planespotting',
-    caption: 'Window seat, wing view, 10/10 no notes.',
+    caption: 'Caught this one on final approach. Plane spotting is a personality trait at this point.',
     likes: 214,
   },
   {
@@ -146,18 +131,18 @@ const fixations = [
     likes: 267,
   },
   {
-    img: petraImg,
+    img: indyJonesImg,
     tag: 'indianajones',
-    caption: 'It belongs in a museum. (My heart, specifically.)',
+    caption: 'Found my spirit animal at Legoland. It belongs in a museum.',
     likes: 298,
   },
 ]
 
 const nav = [
-  ['Experience', '#experience'],
-  ['Highlights', '#highlights'],
-  ['Fixations', '#fixations'],
   ['About', '#about'],
+  ['Highlights', '#highlights'],
+  ['Experience', '#experience'],
+  ['Fixations', '#fixations'],
   ['Contact', '#contact'],
 ]
 
@@ -179,91 +164,29 @@ document.querySelector('#app').innerHTML = `
       <div class="hero-copy reveal">
         <p class="eyebrow">Ann Arbor, MI</p>
         <h1>Lalitaditya Akkaraju</h1>
-        <p class="hero-sub">Finance &amp; Data Science at Michigan Ross. I build DCFs, dashboards, and the occasional
-          Instagram-style scrapbook of my current obsessions.</p>
+        <p class="hero-sub">Finance &amp; Data Science at Michigan Ross.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="${resumeUrl}" target="_blank" rel="noopener">View Résumé</a>
           <a class="btn btn-ghost" href="mailto:akkaraju@umich.edu">Email Me</a>
         </div>
         <ul class="hero-stats">
-          <li><strong>4.00</strong><span>GPA</span></li>
-          <li><strong>1550</strong><span>SAT</span></li>
-          <li><strong>Wharton</strong><span>MBA Buyout Finalist</span></li>
+          <li>4.00 / 4.00 GPA</li>
+          <li>1550 / 1600 SAT</li>
+          <li>Wharton MBA Buyout Competition Finalist</li>
         </ul>
       </div>
       <div class="hero-photo reveal">
-        <img src="${headshot}" alt="Placeholder headshot for Lalitaditya Akkaraju" />
-        <span class="photo-note">photo coming soon</span>
+        <div class="hero-photo-blob"></div>
+        <img src="${headshot}" alt="Lalitaditya Akkaraju" />
       </div>
     </section>
 
-    <section id="experience" class="section wrap">
-      <h2 class="section-title reveal">Experience</h2>
-      <ol class="timeline">
-        ${experience
-          .map(
-            (job) => `
-          <li class="timeline-item reveal">
-            <div class="timeline-when">${job.when}</div>
-            <div class="timeline-body">
-              <h3>${job.role}</h3>
-              <p class="timeline-org">${job.org} — ${job.where}</p>
-              <ul>
-                ${job.bullets.map((b) => `<li>${b}</li>`).join('')}
-              </ul>
-            </div>
-          </li>`
-          )
-          .join('')}
-      </ol>
-    </section>
-
-    <section id="highlights" class="section wrap">
-      <h2 class="section-title reveal">Highlights</h2>
-      <p class="section-sub reveal">A few projects and pitches I'm proud of.</p>
-      <div class="highlight-grid">
-        ${highlights
-          .map(
-            (h) => `
-          <article class="highlight-card reveal">
-            <span class="highlight-tag">${h.tag}</span>
-            <h3>${h.title}</h3>
-            <p class="highlight-org">${h.org}</p>
-            <p>${h.desc}</p>
-          </article>`
-          )
-          .join('')}
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Finance &middot; Data &middot; DCFs &middot; Plane Spotting &middot; Catan &middot; Investing &middot; Michigan Ross &middot; </span>
+        <span>Finance &middot; Data &middot; DCFs &middot; Plane Spotting &middot; Catan &middot; Investing &middot; Michigan Ross &middot; </span>
       </div>
-    </section>
-
-    <section id="fixations" class="section wrap">
-      <h2 class="section-title reveal">Current Fixations</h2>
-      <p class="section-sub reveal">A very unserious feed of things I can't stop thinking about.</p>
-      <div class="feed-grid">
-        ${fixations
-          .map(
-            (f, i) => `
-          <article class="feed-post reveal">
-            <div class="feed-post-header">
-              <span class="feed-avatar">LA</span>
-              <div>
-                <p class="feed-handle">lalitaditya</p>
-                <p class="feed-hashtag">#${f.tag}</p>
-              </div>
-            </div>
-            <div class="feed-photo">
-              <img src="${f.img}" alt="${f.caption}" loading="lazy" />
-            </div>
-            <div class="feed-actions">
-              <button class="like-btn" data-index="${i}" aria-label="Like">❤</button>
-              <span class="like-count">${f.likes}</span>
-            </div>
-            <p class="feed-caption"><strong>lalitaditya</strong> ${f.caption}</p>
-          </article>`
-          )
-          .join('')}
-      </div>
-    </section>
+    </div>
 
     <section id="about" class="section wrap about-section">
       <div class="about-text reveal">
@@ -272,8 +195,8 @@ document.querySelector('#app').innerHTML = `
           Finance with a minor in Data Science. I spend most of my time underwriting equities, building dashboards
           for community organizations, and trying to find the best breakfast spot in Ann Arbor (current answer:
           The Hen).</p>
-        <p>Outside of that: plane spotting, Banff National Park, beach volleyball, losing at Catan, Gilded Age
-          history, and rewatching Indiana Jones for the hundredth time.</p>
+        <p>Outside of that, I enjoy plane spotting, Banff National Park, beach volleyball, losing at Catan, Gilded
+          Age history, and rewatching Indiana Jones for the hundredth time.</p>
       </div>
       <div class="about-card reveal">
         <h3>Education</h3>
@@ -290,6 +213,76 @@ document.querySelector('#app').innerHTML = `
       </div>
     </section>
 
+    <section id="highlights" class="section wrap">
+      <h2 class="section-title reveal">Highlights</h2>
+      <p class="section-sub reveal">A few projects and pitches I'm proud of.</p>
+      <div class="highlight-grid">
+        ${highlights
+          .map(
+            (h, i) => `
+          <article class="highlight-card reveal" style="transition-delay:${i * 70}ms">
+            <span class="highlight-tag">${h.tag}</span>
+            <h3>${h.title}</h3>
+            <p class="highlight-org">${h.org}</p>
+            <p>${h.desc}</p>
+          </article>`
+          )
+          .join('')}
+      </div>
+    </section>
+
+    <section id="experience" class="section wrap">
+      <h2 class="section-title reveal">Experience</h2>
+      <ol class="timeline">
+        ${experience
+          .map(
+            (job, i) => `
+          <li class="timeline-item reveal" style="transition-delay:${i * 80}ms">
+            <div class="timeline-when">${job.when}</div>
+            <div class="timeline-body">
+              <h3>${job.role}</h3>
+              <p class="timeline-org">${job.org} — ${job.where}</p>
+              <p class="timeline-story">${job.story}</p>
+            </div>
+          </li>`
+          )
+          .join('')}
+      </ol>
+    </section>
+
+    <section id="fixations" class="section wrap">
+      <h2 class="section-title reveal">Current Fixations</h2>
+      <p class="section-sub reveal">A very unserious feed of things I can't stop thinking about.</p>
+      <div class="feed-wrap">
+        <button class="feed-arrow feed-arrow-left" id="feed-prev" aria-label="Scroll left">&#8249;</button>
+        <div class="feed-grid" id="feed-grid">
+          ${fixations
+            .map(
+              (f, i) => `
+            <article class="feed-post reveal" style="transition-delay:${i * 60}ms">
+              <div class="feed-post-header">
+                <span class="feed-avatar">LA</span>
+                <div>
+                  <p class="feed-handle">lalitaditya</p>
+                  <p class="feed-hashtag">#${f.tag}</p>
+                </div>
+              </div>
+              <div class="feed-photo">
+                <img src="${f.img}" alt="${f.caption}" loading="lazy" />
+              </div>
+              <div class="feed-actions">
+                <button class="like-btn" data-index="${i}" aria-label="Like">❤</button>
+                <span class="like-count">${f.likes}</span>
+              </div>
+              <p class="feed-caption"><strong>lalitaditya</strong> ${f.caption}</p>
+            </article>`
+            )
+            .join('')}
+        </div>
+        <button class="feed-arrow feed-arrow-right" id="feed-next" aria-label="Scroll right">&#8250;</button>
+      </div>
+    </section>
+
     <section id="contact" class="section wrap contact-section">
       <h2 class="section-title reveal">Contact</h2>
       <p class="section-sub reveal">Always happy to talk investing, data, or where to find good pancakes.</p>
@@ -303,7 +296,7 @@ document.querySelector('#app').innerHTML = `
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <p>&copy; ${new Date().getFullYear()} Lalitaditya Akkaraju</p>
-      <p class="footer-note">Built with Vite</p>
+      <p class="footer-note">Fixation photos: Wikimedia Commons &amp; Unsplash</p>
     </div>
   </footer>
 `
@@ -329,7 +322,43 @@ document.querySelectorAll('.like-btn').forEach((btn) => {
     const countEl = btn.nextElementSibling
     const base = fixations[Number(btn.dataset.index)].likes
     countEl.textContent = liked ? base + 1 : base
+    btn.classList.remove('pop')
+    void btn.offsetWidth
+    btn.classList.add('pop')
   })
+})
+
+// horizontal scroll arrows for the fixations feed
+const feedGrid = document.getElementById('feed-grid')
+const scrollAmount = 320
+document.getElementById('feed-prev').addEventListener('click', () => {
+  feedGrid.scrollBy({ left: -scrollAmount, behavior: 'smooth' })
+})
+document.getElementById('feed-next').addEventListener('click', () => {
+  feedGrid.scrollBy({ left: scrollAmount, behavior: 'smooth' })
+})
+
+// click-and-drag scrolling on desktop
+let isDragging = false
+let dragStartX = 0
+let dragScrollLeft = 0
+feedGrid.addEventListener('mousedown', (e) => {
+  isDragging = true
+  feedGrid.classList.add('dragging')
+  dragStartX = e.pageX - feedGrid.offsetLeft
+  dragScrollLeft = feedGrid.scrollLeft
+})
+;['mouseleave', 'mouseup'].forEach((evt) =>
+  feedGrid.addEventListener(evt, () => {
+    isDragging = false
+    feedGrid.classList.remove('dragging')
+  })
+)
+feedGrid.addEventListener('mousemove', (e) => {
+  if (!isDragging) return
+  e.preventDefault()
+  const x = e.pageX - feedGrid.offsetLeft
+  feedGrid.scrollLeft = dragScrollLeft - (x - dragStartX)
 })
 
 // scroll reveal
