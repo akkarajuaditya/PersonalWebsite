@@ -138,11 +138,33 @@ const fixations = [
   },
 ]
 
+const whyRecalc = [
+  {
+    step: '01 — Investment judgment',
+    title: 'From finding mispricing to creating value',
+    text: 'My investing experience has largely taught me to ask what the market may be missing about a company. Recalc interests me because I want to add a second question: if I actually owned the business, what could I change? I want to understand how investors translate operating levers—pricing, M&A, product expansion, or efficiency—into an underwriting case rather than simply forecasting the resulting financials.',
+  },
+  {
+    step: '02 — Analytical execution',
+    title: 'Learning what belongs in the model',
+    text: 'The more real data I have worked with, the more I have realized that building a model is often easier than deciding which assumptions deserve to go into it. After analyzing community data for a nonprofit and company and industry information in investing roles, I want to get better at moving from messy operating evidence to a defensible investment case. Recalc’s emphasis on business analysis alongside modeling particularly appeals to me for that reason.',
+  },
+  {
+    step: '03 — AI-enabled execution',
+    title: 'Using AI without outsourcing judgment',
+    text: 'I already use AI heavily to accelerate how I learn finance, but that has made strong fundamentals more—not less—important to me. The real advantage is not getting an answer faster; it is understanding a concept deeply enough to challenge the answer, recognize when it is wrong, and know which work should remain human. Recalc’s explicit focus on learning both the foundational and AI-powered approaches is therefore particularly compelling to me.',
+  },
+]
+
+const whyRecalcClosing =
+  "I don't want Recalc simply to teach me more finance. I want it to change where I add value in the analytical process — from understanding the mechanics of a model to determining what should go into it, what an owner could actually do to change the outcome, and where AI can accelerate that work without replacing my judgment."
+
 const nav = [
   ['About', '#about'],
   ['Highlights', '#highlights'],
   ['Experience', '#experience'],
   ['Fixations', '#fixations'],
+  ['Why Recalc', '#why-recalc'],
   ['Contact', '#contact'],
 ]
 
@@ -281,6 +303,24 @@ document.querySelector('#app').innerHTML = `
         </div>
         <button class="feed-arrow feed-arrow-right" id="feed-next" aria-label="Scroll right">&#8250;</button>
       </div>
+    </section>
+
+    <section id="why-recalc" class="section wrap">
+      <h2 class="section-title reveal">Why Recalc</h2>
+      <p class="section-sub reveal">Three questions I want this program to help me answer.</p>
+      <div class="recalc-grid">
+        ${whyRecalc
+          .map(
+            (r, i) => `
+          <article class="recalc-card reveal" style="transition-delay:${i * 90}ms">
+            <span class="recalc-step">${r.step}</span>
+            <h3>${r.title}</h3>
+            <p>${r.text}</p>
+          </article>`
+          )
+          .join('')}
+      </div>
+      <blockquote class="recalc-quote reveal">${whyRecalcClosing}</blockquote>
     </section>
 
     <section id="contact" class="section wrap contact-section">

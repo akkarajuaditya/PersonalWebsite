@@ -696,6 +696,75 @@ a {
   color: var(--maize);
 }
 
+/* why recalc */
+
+.recalc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-bottom: 36px;
+}
+
+.recalc-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--maize-deep);
+  border-radius: var(--radius);
+  padding: 26px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recalc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.recalc-step {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--maize-deep);
+  margin-bottom: 12px;
+}
+
+.recalc-card h3 {
+  font-family: var(--font-display);
+  color: var(--navy);
+  font-size: 1.12rem;
+  margin: 0 0 10px;
+}
+
+.recalc-card p {
+  font-size: 0.94rem;
+  margin: 0;
+}
+
+.recalc-quote {
+  margin: 0;
+  background: var(--navy);
+  color: var(--paper);
+  border-radius: var(--radius);
+  padding: 36px 36px 36px 56px;
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.5;
+  font-style: normal;
+  position: relative;
+}
+
+.recalc-quote::before {
+  content: "\201C";
+  color: var(--maize);
+  font-size: 2.4rem;
+  line-height: 0;
+  position: absolute;
+  top: 28px;
+  left: 22px;
+  font-family: var(--font-display);
+}
+
 /* contact */
 
 .contact-section {
